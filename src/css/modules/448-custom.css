@@ -1,0 +1,7 @@
+@media (min-width: 448px) {
+	/* A custom breakpoint. Exactly THE reason breakpoint-based modules suck.
+	–> Rewrite the modules from scratch in a more meaningful way. Maybe when custom-media queries are supported? */
+	#languages label[for="english"] {
+		margin-right: 0.5em;
+	}
+}

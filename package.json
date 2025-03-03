@@ -1,0 +1,21 @@
+{
+	"name": "online-cv",
+	"source": "src/index.html",
+	"browserslist": "defaults",
+	"scripts": {
+		"dev": "parcel",
+		"clear-cache": "rm -rf .parcel-cache",
+		"prebuild": "rm -rf dist",
+		"build": "parcel build"
+	},
+	"devDependencies": {
+		"@parcel/packager-raw-url": "^2.13.3",
+		"@parcel/transformer-sass": "^2.13.3",
+		"@parcel/transformer-webmanifest": "^2.13.3",
+		"@yohns/picocss": "^2.2.10",
+		"parcel": "^2.13.3",
+		"parcel-reporter-static-files-copy": "^1.5.3",
+		"sharp": "^0.33.5",
+		"svgo": "^3.3.2"
+	}
+}

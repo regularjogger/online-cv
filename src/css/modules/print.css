@@ -1,0 +1,26 @@
+@media print {
+	#links {
+		text-align: center;
+	}
+
+	.icon-link {
+		color: #5d6b89; /* Hardcoding the value of light theme --pico-secondary to keep contrast when printing */
+	}
+
+	#lang-switch,
+	label:has(input[name="color-mode-toggle"]),
+	footer {
+		display: none;
+	}
+
+	.print-link,
+	.lang-level {
+		display: inline;
+	}
+
+	/* Adding page breaks where needed */
+	#languages,
+	#work-experience {
+		break-after: page;
+	}
+}

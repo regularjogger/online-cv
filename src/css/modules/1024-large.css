@@ -1,0 +1,48 @@
+@media (min-width: 1024px) {
+	.flex-container {
+		display: flex;
+		gap: var(--pico-grid-row-gap) var(--pico-grid-column-gap);
+	}
+
+	#links {
+		order: 3;
+	}
+
+	#photo,
+	#sidebar {
+		flex: 0 0 25%;
+	}
+
+	#name {
+		align-self: center;
+		margin-inline: auto;
+
+		hgroup {
+			margin-top: 3em;
+			margin-right: -7.1em; /* Adjust according to the width of the #links container // -136px? */
+		}
+
+		h1 {
+			font-size: 3.5em;
+		}
+
+		p {
+			font-size: 1.2em;
+		}
+	}
+
+	#sidebar ul {
+		column-count: initial;
+		column-width: initial;
+	}
+
+	#languages {
+		label[for="english"] {
+			margin-right: 1em;
+		}
+
+		meter {
+			width: 6em;
+		}
+	}
+}

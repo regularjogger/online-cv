@@ -1,0 +1,195 @@
+/* CARD BOTTOM MARGIN FIX */
+article > :last-child {
+	margin-bottom: 0;
+}
+
+/* figtree-regular */
+@font-face {
+	font-display: swap;
+	font-family: 'Figtree';
+	font-weight: 400;
+	src: url('/assets/fonts/figtree/Figtree-Regular.woff2') format('woff2');
+}
+
+/* figtree-700 */
+@font-face {
+	font-display: swap;
+	font-family: 'Figtree';
+	font-weight: 700;
+	src: url('/assets/fonts/figtree/Figtree-Bold.woff2') format('woff2');
+}
+
+:root {
+	--pico-font-family: Figtree, var(--pico-font-family-sans-serif);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	@view-transition {
+		navigation: auto;
+	}
+
+	::view-transition-group(root) {
+		animation-duration: 0.4s;
+	}
+
+	@supports not (navigation: auto) { /* Waiting for Firefox to support View Transition API (https://caniuse.com/mdn-api_viewtransition) */
+		body {
+			animation: fadein 0.4s;
+		}
+
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#links,
+#name hgroup,
+footer {
+	text-align: center;
+}
+
+label:has(input[name="color-mode-toggle"]) {
+	display: inline-block;
+}
+
+input[name="color-mode-toggle"] {
+	margin-inline-end: 0; /* Yohn 2.2.10 – 0.5em reset */
+}
+
+.vr { /* https://getbootstrap.com/docs/5.2/helpers/vertical-rule/ */
+	display: inline-block;
+	align-self: stretch;
+	width: calc(var(--pico-border-width) + 0.0625rem); /* Default + 1px? */
+	min-height: 1em;
+	background-color: var(--pico-muted-border-color);
+	margin-inline: 0.3em;
+	margin-bottom: -0.15em; /* Align with text */
+}
+
+.icon-link {
+	color: var(--pico-secondary);
+
+	&:hover,
+	&:focus {
+		color: var(--pico-secondary-hover); /* :focus too light */
+	}
+}
+
+.print-link {
+	margin-left: 0.1em;
+	display: none;
+}
+
+#lang-switch {
+	opacity: 0.85;
+	transition: opacity var(--pico-transition);
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+
+#photo {
+	padding-bottom: var(--pico-block-spacing-vertical);
+
+	img {
+		display: block;
+		margin-inline: auto;
+		border-radius: 50%;
+	}
+}
+
+#name {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	p {
+		font-size: 1.15em;
+	}
+}
+
+#sidebar {
+	section {
+		margin-bottom: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.65em;
+	}
+
+	ul {
+		padding-left: 0;
+		column-count: 2;
+		column-width: 12.5em; /* 200px? */
+	}
+
+	a {
+		display: inline;
+	}
+}
+
+.emo-icon {
+	font-size: 1.3em;
+}
+
+#contact h2,
+.lang-level {
+	display: none;
+}
+
+#languages {
+	label {
+		display: inline;
+		margin-right: 0.5em;
+	}
+
+	label[for="english"] {
+		margin-right: 1em;
+	}
+
+	meter {
+		width: 6.5em;
+	}
+}
+
+#main-content {
+	section:not(:last-child) {
+		margin-bottom: 2em;
+	}
+
+	h2 {
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			height: 0.5em;
+			vertical-align: bottom;
+			width: 100%;
+			margin-right: -100%;
+			margin-left: 0.5em;
+			border-top: var(--pico-border-width) solid var(--pico-muted-border-color);
+		}
+	}
+}
+
+#work-experience h3 {
+	font-size: 1.4em;
+}
+
+#education h3 {
+	font-size: 1.25em;
+}
