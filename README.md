@@ -4,4 +4,3 @@
 - [Bootstrap icons](https://icons.getbootstrap.com/) v1.11.3
 - [SVG Flags icons for Tailwind & Bootstrap](https://svgflags.com/)
 - [RealFaviconGenerator](https://realfavicongenerator.net/)
-- [Email Encoder](https://email-encoder.com/)
