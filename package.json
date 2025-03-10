@@ -6,7 +6,7 @@
 		"dev": "parcel",
 		"clear-cache": "rm -rf .parcel-cache",
 		"prebuild": "rm -rf dist",
-		"build": "parcel build"
+		"build": "parcel build && ./get_env_vars.sh"
 	},
 	"devDependencies": {
 		"@parcel/packager-raw-url": "^2.13.3",
