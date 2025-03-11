@@ -12,81 +12,81 @@
 	),
 	$modules: ( /* Yohn 2.2.10 */
 		// Theme
-    "themes/default": true,
+		"themes/default": true,
 
-    // Layout
-    "layout/document": true,
-    "layout/landmarks": true,
-    "layout/container": true,
-    "layout/section": true,
+		// Layout
+		"layout/document": true,
+		"layout/landmarks": true,
+		"layout/container": true,
+		"layout/section": true,
 
-    // V3 Notes
-    // Add <aside> to layout folder, and have it auto build the a grid system
-    // will add notes someplace about idea on how to enable.
-    // use grid-template
-    // maybe only then keep the grid and remove the row system.
-    "layout/grid": true,
-    "layout/row": false,
-    "layout/overflow-auto": false,
+		// V3 Notes
+		// Add <aside> to layout folder, and have it auto build the a grid system
+		// will add notes someplace about idea on how to enable.
+		// use grid-template
+		// maybe only then keep the grid and remove the row system.
+		"layout/grid": true,
+		"layout/row": false,
+		"layout/overflow-auto": false,
 
-    // Content
-    "content/link": true,
-    "content/typography": true,
-    "content/embedded": false,
-    "content/button": false,
-    "content/table": false,
-    "content/code": false,
-    "content/figure": false,
-    "content/misc": false,
+		// Content
+		"content/link": true,
+		"content/typography": true,
+		"content/embedded": false,
+		"content/button": false,
+		"content/table": false,
+		"content/code": false,
+		"content/figure": false,
+		"content/misc": false,
 
-    // Forms
-    "forms/basics": true,
-    "forms/checkbox-radio-switch": true,
-    "forms/input-color": false,
-    "forms/input-date": false,
-    "forms/input-file": false,
-    "forms/input-range": false,
-    "forms/input-search": false,
-    "forms/floating": false,
-    // V3 Notes
-    // Remove original pico validation in favor of :user-[in]valid
-    "forms/validation": false,
+		// Forms
+		"forms/basics": true,
+		"forms/checkbox-radio-switch": true,
+		"forms/input-color": false,
+		"forms/input-date": false,
+		"forms/input-file": false,
+		"forms/input-range": false,
+		"forms/input-search": false,
+		"forms/floating": false,
+		// V3 Notes
+		// Remove original pico validation in favor of :user-[in]valid
+		"forms/validation": false,
 
-    // Components
-    "components/accordion": false,
-    "components/card": true,
-    // V3 Notes
-    // Allow for sub-menus in dropdown
-    "components/dropdown": false,
-    "components/group": false,
-    "components/loading": false,
-    "components/modal": false,
-    // V3 Notes
-    // incorperate the <menu> tag into navigations.
-    "components/nav": true,
-    "components/progress": false,
-    "components/tab": false,
+		// Components
+		"components/accordion": false,
+		"components/card": true,
+		// V3 Notes
+		// Allow for sub-menus in dropdown
+		"components/dropdown": false,
+		"components/group": false,
+		"components/loading": false,
+		"components/modal": false,
+		// V3 Notes
+		// incorperate the <menu> tag into navigations.
+		"components/nav": true,
+		"components/progress": false,
+		"components/tab": false,
 
-    // [role=tablist]
-    // I wish role="tablist|tab|tabpanel" could be used on <details> and <summary> tag.
-    "components/tab-region": false,
-    // DOES NOT WORK IN CHROME
-    "components/tooltip": false,
-    // V3 Notes
-    // might find a new way to do this, I'll wait to hear feedback on this approach.
-    "components/nav-hamburger": false,
+		// [role=tablist]
+		// I wish role="tablist|tab|tabpanel" could be used on <details> and <summary> tag.
+		"components/tab-region": false,
+		// DOES NOT WORK IN CHROME
+		"components/tooltip": false,
+		// V3 Notes
+		// might find a new way to do this, I'll wait to hear feedback on this approach.
+		"components/nav-hamburger": false,
 
-    // V3 Notes
-    // Notification should be redone to be more in line with Pico's design
-    "components/notification": false,
-    "components/popover": false,
-    // V3 Notes
-    // timeline disabled by default because its more out of the scope of this project,
-    // and should be moved to a separate "extras" repository, to be included.
-    "components/timeline": false,
+		// V3 Notes
+		// Notification should be redone to be more in line with Pico's design
+		"components/notification": false,
+		"components/popover": false,
+		// V3 Notes
+		// timeline disabled by default because its more out of the scope of this project,
+		// and should be moved to a separate "extras" repository, to be included.
+		"components/timeline": false,
 
-    // Utilities
-    "utilities/accessibility": true,
-    "utilities/reduce-motion": true
+		// Utilities
+		"utilities/accessibility": true,
+		"utilities/reduce-motion": true
 	)
 );
